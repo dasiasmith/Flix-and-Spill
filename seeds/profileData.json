@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Jing Liu",
+    "email": "jingliu778@gmail.com",
+    "bio": "Like movie and music.",
+    "user_id": "1"
+  },
+  {
+    "name": "Dasia Smith",
+    "email": "dasiasmith023@gmail.com",
+    "bio": "Like dogs.",
+    "user_id": "2"
+  },
+  {
+    "name": "Keisa Portress",
+    "email": "kportress@gmail.com",
+    "bio": "Like cats.",
+    "user_id": "3"
+  },
+  {
+    "name": "Olivia Latham",
+    "email": "kolatham96@gmail.com",
+    "bio": "Like to bake.",
+    "user_id": "4"
+  }
+]
