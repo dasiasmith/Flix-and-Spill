@@ -1,0 +1,14 @@
+<div class="text-center">
+  <h2>{{name}}</h2>
+  <p>{{{get_emoji}}}</p>
+  <p>{{description}}</p>
+  <p>Created by {{user.name}} on {{format_date date_created}}</p>
+  <p>
+    <span {{get_status}} aria-label="status"></span>
+    <span class="status_medal">{{format_amount reviews_posted}}</span>
+  </p>
+  <p>
+    <button class="btn btn-primary">Movie Reviews!</button>
+    <button class="btn btn-primary">Show Reviews!</button>
+  </p>
+</div>
