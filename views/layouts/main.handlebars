@@ -20,6 +20,7 @@
           <a href="/">Review a Show or Movie</a>
         </h1>
         <nav>
+
           <!-- Conditionally render login or logout links -->
           {{#if logged_in}}
             <a href="/profile">profile</a>
@@ -28,6 +29,22 @@
           {{else}}
             <a href="/login">login</a>
           {{/if}}
+          {{! search bar  }}
+          <form class="form-inline my-2 my-lg-0" id="search-form">
+            <input
+              type="text"
+              class="form-control mr-sm-2 bg-white text-dark"
+              id="search-input"
+              name="search-text"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              type="submit"
+              class="btn btn-outline-warning my-2 my-sm-0"
+              id="btn-post"
+            >Search</button>
+          </form>
         </nav>
       </header>
       <main class="container container-fluid mt-5">
