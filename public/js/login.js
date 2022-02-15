@@ -28,6 +28,7 @@ const signupFormHandler = async (event) => {
   const name = document.querySelector("#name-signup").value.trim();
   const email = document.querySelector("#email-signup").value.trim();
   const password = document.querySelector("#password-signup").value.trim();
+  console.log("user input----->", name, email, password);
   // checking name email and password
   if (name && email && password) {
     const response = await fetch("/api/users", {
@@ -35,7 +36,7 @@ const signupFormHandler = async (event) => {
       body: JSON.stringify({ name, email, password }),
       headers: { "Content-Type": "application/json" },
     });
-
+    console.log("response---->", JSON.stringify(response, null, 2));
     if (response.ok) {
       document.location.replace("/");
     } else {

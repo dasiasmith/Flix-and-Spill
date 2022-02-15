@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const { User } = require("../../models");
+const nodemailer = require("nodemailer");
 
 // get user account
 router.get("/", async (req, res) => {
@@ -17,6 +18,28 @@ router.get("/", async (req, res) => {
 router.post("/", async (req, res) => {
   try {
     const userData = await User.create(req.body);
+    let transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: process.env.USER_EMAIL, // generated ethereal user
+        pass: process.env.USER_PASS, // generated ethereal password
+      },
+    });
+
+    const options = {
+      from: process.env.USER_EMAIL, // sender address
+      to: `${userData.email}`, // list of receivers
+      subject: "Hello", // Subject line
+      text: "Hello world?",
+    };
+
+    transporter.sendMail(options, function (err, info) {
+      if (err) {
+        console.log("err--->: ", err);
+        return;
+      }
+      console.log(info.response);
+    });
 
     req.session.save(() => {
       req.session.user_id = userData.id;
