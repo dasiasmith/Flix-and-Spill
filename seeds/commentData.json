@@ -1,0 +1,17 @@
+[
+  {
+    "comment": "I like this review",
+    "user_id": "1",
+    "review_id": "1"
+  },
+  {
+    "comment": "Good review",
+    "user_id": "2",
+    "review_id": "2"
+  },
+  {
+    "comment": "Disagree",
+    "user_id": "3",
+    "review_id": "3"
+  }
+]
