@@ -11,23 +11,32 @@
     <form class="form new-review-form">
       <div class="form-group">
         <label for="review-title">Review Name:</label>
-        <input class="form-input" type="text" id="review-title" name="review-title" />
+        <input
+          class="form-input"
+          type="text"
+          id="review-title"
+          name="review-title"
+        />
       </div>
       {{!-- <div class="form-group">
         <label for="reviews">Number of Reviews Left:{{get_status}}</label>
         <input class="form-input" type="number" id="reviews" name="reviews" />
       </div> --}}
-      {{!-- <div class="form-group">
+      {{! <div class="form-group">
         <label for="following">Following:</label>
         <input class="form-input" type="number" id="following" name="following" />
       </div>
       <div class="form-group">
         <label for="followers">Followers:</label>
         <input class="form-input" type="number" id="followers" name="followers" />
-      </div> --}}
+      </div> }}
       <div class="form-group">
         <label for="review-content">Review:</label>
-        <textarea class="form-input" id="review-content" name="review-content"></textarea>
+        <textarea
+          class="form-input"
+          id="review-content"
+          name="review-content"
+        ></textarea>
       </div>
       <div class="form-group">
         <button type="submit" class="btn btn-primary">Create</button>
@@ -36,20 +45,23 @@
   </div>
 
   {{#if reviews.length}}
-  <div class="col-md-6 review-list">
-    <h3>Current Reviews:</h3>
+    <div class="col-md-6 review-list">
+      <h3>Current Reviews:</h3>
 
-    {{#each reviews as |review|}}
-    <div class="row mb-2">
-      <div class="col-md-8">
-        <h4><a href="/review/{{review.id}}">{{review.title}}</a></h4>
-      </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{review.id}}">DELETE</button>
-      </div>
+      {{#each reviews as |review|}}
+        <div class="row mb-2">
+          <div class="col-md-8">
+            <h4><a href="/review/{{review.id}}">{{review.title}}</a></h4>
+          </div>
+          <div class="col-md-4">
+            <button
+              class="btn btn-sm btn-danger"
+              data-id="{{review.id}}"
+            >DELETE</button>
+          </div>
+        </div>
+      {{/each}}
     </div>
-    {{/each}}
-  </div>
   {{/if}}
 </div>
 

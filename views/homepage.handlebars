@@ -1,13 +1,13 @@
 <!-- Loop over each object in the projects array -->
-{{#each reviews as |review| }}
-{{!-- <div class="row mb-4 project">
+{{#each reviews as |review|}}
+  {{!-- <div class="row mb-4 project">
   <div class="col-md-5">
     <h2>
       <!-- Call helper function with triple brackets to render the emoji span as HTML -->
       {{{get_emoji}}}
       <a href="/review/{{review.id}}">{{review.title}}</a>
     </h2> --}}
-    {{!-- <p>
+  {{!-- <p>
       <span for="img" aria-label="money">💲</span>
       <!-- Pass needed_funding value to the helper function -->
       <span class="dollar-amount">{{format_amount project.needed_funding}}</span>
@@ -19,36 +19,62 @@
     <p>
       {{project.description}}
     </p> --}}
-  {{!-- </div> --}} --}}
+  {{! </div> }}
+  --}}
 
-<div class="card" style="width: 18rem;">
-  <img src="public\assets\Can You Keep a Secret_Movies_5.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <div class="card" style="width: 18rem;">
+    <img
+      src="public\\assets\Can You Keep a Secret_Movies_5.jpg"
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body">
+      <p class="card-text">Some quick example text to build on the card title
+        and make up the bulk of the card's content.</p>
+    </div>
   </div>
-</div>
-<div class="card" style="width: 18rem;">
-  <img src="public\assets\Transformers_Movies_4.jpg" class="card-img-top" alt="Transformers_Netflix_Movie">
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <div class="card" style="width: 18rem;">
+    <img
+      src="public\\assets\Transformers_Movies_4.jpg"
+      class="card-img-top"
+      alt="Transformers_Netflix_Movie"
+    />
+    <div class="card-body">
+      <p class="card-text">Some quick example text to build on the card title
+        and make up the bulk of the card's content.</p>
+    </div>
   </div>
-</div>
-<div class="card" style="width: 18rem;">
-  <img src="public\assets\The Tinder Swindler_Movies_3.jpg" class="card-img-top" alt="The Tinder Swindler_Movie">
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <div class="card" style="width: 18rem;">
+    <img
+      src="public\\assets\The Tinder Swindler_Movies_3.jpg"
+      class="card-img-top"
+      alt="The Tinder Swindler_Movie"
+    />
+    <div class="card-body">
+      <p class="card-text">Some quick example text to build on the card title
+        and make up the bulk of the card's content.</p>
+    </div>
   </div>
-</div>
-<div class="card" style="width: 18rem;">
-  <img src="public\assets\Despicable Me 2_Movies_2.jpg" class="card-img-top" alt="Despicable Me 2_Movie">
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <div class="card" style="width: 18rem;">
+    <img
+      src="public\\assets\Despicable Me 2_Movies_2.jpg"
+      class="card-img-top"
+      alt="Despicable Me 2_Movie"
+    />
+    <div class="card-body">
+      <p class="card-text">Some quick example text to build on the card title
+        and make up the bulk of the card's content.</p>
+    </div>
   </div>
-</div>
-<div class="card" style="width: 18rem;">
-  <img src="public\assets\Home Team_Movies_1.jpg" class="card-img-top" alt="Home Team_Movie">
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <div class="card" style="width: 18rem;">
+    <img
+      src="public\\assets\Home Team_Movies_1.jpg"
+      class="card-img-top"
+      alt="Home Team_Movie"
+    />
+    <div class="card-body">
+      <p class="card-text">Some quick example text to build on the card title
+        and make up the bulk of the card's content.</p>
+    </div>
   </div>
-</div>
 {{/each}}

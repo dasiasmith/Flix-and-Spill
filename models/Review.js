@@ -1,7 +1,31 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/connection");
 
-class Review extends Model {}
+class Review extends Model {
+  // static upvote(body, models) {
+  //   return models.Vote.create({
+  //     user_id: body.user_id,
+  //     review_id: body.review_id,
+  //   }).then(() => {
+  //     return Review.findOne({
+  //       where: {
+  //         id: body.review_id,
+  //       },
+  //       attributes: [
+  //         "id",
+  //         "post_text",
+  //         "created_at",
+  //         [
+  //           sequelize.literal(
+  //             "(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)"
+  //           ),
+  //           "vote_count",
+  //         ],
+  //       ],
+  //     });
+  //   });
+  // }
+}
 
 Review.init(
   {
@@ -23,22 +47,21 @@ Review.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
-    
+
     user_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'user',
-        key: 'id',
+        model: "user",
+        key: "id",
       },
     },
-   
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'review',
+    modelName: "review",
   }
 );
 
