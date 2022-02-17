@@ -22,3 +22,7 @@
 .btn i:hover {
   cursor: pointer;
 }
+
+.search-btn {
+  font-size: 4px;
+}

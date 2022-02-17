@@ -55,7 +55,7 @@ router.get("/review/:id", async (req, res) => {
     });
 
     const review = reviewData.get({ plain: true });
-
+    console.log("review data---->", JSON.stringify(review, null, 2));
     res.render("review", {
       ...review,
       logged_in: req.session.logged_in,

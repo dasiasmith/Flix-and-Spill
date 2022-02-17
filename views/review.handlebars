@@ -1,11 +1,11 @@
 <div class="text-center">
   <h2>{{name}}</h2>
   {{!-- <p>{{{get_status}}}</p> --}}
-  <p>{{description}}</p>
+  <p>{{title}}</p>
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
   <p>
     {{!-- <span {{get_status}} aria-label="status"></span> --}}
-    <span class="status_medal">{{format_amount reviews_posted}}</span>
+    <span class="status_medal">{{review}}</span>
   </p>
   <p>
     <button class="btn btn-primary">Movie Reviews!</button>
@@ -15,5 +15,7 @@
       <i class="fas fa-heart"></i>
     </button>
   </p>
+  <div>{{comments.comment}}</div>
 </div>
 <script src="/like/script.js"></script>
+{{! <script src="/js/upvote.js"></script> }}
