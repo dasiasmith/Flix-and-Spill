@@ -16,17 +16,17 @@
 
 /* Search button */
 .btn-outline-warning.my-2.my-sm-0 {
-  color:#fff;
+  color: #fff;
   border: 2px solid var(--red);
 }
 
 .btn-outline-warning.my-2.my-sm-0:hover {
-  background-color:  var(--red);
+  background-color: var(--red);
 }
 
 body {
-color: white;
-background: black;
+  color: white;
+  background: black;
 }
 
 /* Header and navbar */
@@ -65,15 +65,15 @@ header nav ul li {
   position: absolute;
   right: 0;
 }
-.active a { 
-  color: var(--red); 
+.active a {
+  color: var(--red);
 }
-a:hover { 
-  color: #f55d4996; 
+a:hover {
+  color: #f55d4996;
 }
 
 .bg-light {
-  background-color: rgba(0, 0, 0, 0.432)!important;
+  background-color: rgba(0, 0, 0, 0.432) !important;
 }
 
 /*Page Links*/
@@ -83,7 +83,7 @@ a {
 }
 
 /* Movie and Show Cards */
-#topTen{
+#topTen {
   text-align: center;
 }
 
@@ -103,110 +103,108 @@ a {
 }
 
 .container_img {
-background-color: rgba(57, 62, 93, 0.7);
-padding: 0;
-overflow: hidden;
-max-width: 350px;
-margin: 5px;
+  background-color: rgba(57, 62, 93, 0.7);
+  padding: 0;
+  overflow: hidden;
+  max-width: 350px;
+  margin: 5px;
 }
 
 .container_img article {
-padding: 10%;
-position: absolute;
-bottom: 0;
-z-index: 1;
--webkit-transition: all 0.5s ease;
--moz-transition: all 0.5s ease;
--o-transition: all 0.5s ease;
--ms-transition: all 0.5s ease;
-transition: all 0.5s ease;
+  padding: 10%;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .container_img h2 {
-color: #fff;
-font-weight: 800;
-font-size: 25px;
-border-bottom: #fff solid 1px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 25px;
+  border-bottom: #fff solid 1px;
 }
 
 .container_img h4 {
-font-weight: 300;
-color: #fff;
-font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  font-size: 16px;
 }
 
 .container_img img {
-width: 100%;
-top: 0;
-left: 0;
-opacity: 0.4;
--webkit-transition: all 4s ease;
--moz-transition: all 4s ease;
--o-transition: all 4s ease;
--ms-transition: all 4s ease;
-transition: all 4s ease;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  -webkit-transition: all 4s ease;
+  -moz-transition: all 4s ease;
+  -o-transition: all 4s ease;
+  -ms-transition: all 4s ease;
+  transition: all 4s ease;
 }
 
 .see_more {
-background-color: var(--back);
-position: absolute;
-width: 100%;
-height: 70px;
-bottom: 0;
-z-index: 1;
-opacity: 0;
-transform: translate(0px, 70px);
--webkit-transform: translate(0px, 70px);
--moz-transform: translate(0px, 70px);
--o-transform: translate(0px, 70px);
--ms-transform: translate(0px, 70px);
--webkit-transition: all 0.2s ease-in-out;
--moz-transition: all 0.2s ease-in-out;
--o-transition: all 0.2s ease-in-out;
--ms-transition: all 0.2s ease-in-out;
-transition: all 0.2s ease-in-out;
+  background-color: var(--back);
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0;
+  transform: translate(0px, 70px);
+  -webkit-transform: translate(0px, 70px);
+  -moz-transform: translate(0px, 70px);
+  -o-transform: translate(0px, 70px);
+  -ms-transform: translate(0px, 70px);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .see_more span {
-font-size: 40px;
-color: #fff;
-position: relative;
-margin: 0 auto;
-width: 100%;
-top: 13px;
+  font-size: 40px;
+  color: #fff;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  top: 13px;
 }
 
 /*hovers*/
 
 .container_img:hover {
-cursor: pointer;
+  cursor: pointer;
 }
 
 .container_img:hover img {
-opacity: 0.1;
-transform: scale(1.5);
+  opacity: 0.1;
+  transform: scale(1.5);
 }
 
 .container_img:hover article {
-transform: translate(2px, -69px);
--webkit-transform: translate(2px, -69px);
--moz-transform: translate(2px, -69px);
--o-transform: translate(2px, -69px);
--ms-transform: translate(2px, -69px);
+  transform: translate(2px, -69px);
+  -webkit-transform: translate(2px, -69px);
+  -moz-transform: translate(2px, -69px);
+  -o-transform: translate(2px, -69px);
+  -ms-transform: translate(2px, -69px);
 }
 
 .container_img:hover .see_more {
-transform: translate(0px, 0px);
--webkit-transform: translate(0px, 0px);
--moz-transform: translate(0px, 0px);
--o-transform: translate(0px, 0px);
--ms-transform: translate(0px, 0px);
-opacity: 1;
+  transform: translate(0px, 0px);
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  opacity: 1;
 }
 
-
 /* Reviews Style */
-
 
 .card {
   border-radius: 5px;
@@ -215,62 +213,57 @@ opacity: 1;
   padding-right: 60px;
   margin-top: 30px;
   padding-top: 30px;
-  padding-bottom: 30px
+  padding-bottom: 30px;
 }
-
 
 .bar-5 {
   width: 70%;
   height: 13px;
-  background-color: #FBC02D;
-  border-radius: 20px
+  background-color: #fbc02d;
+  border-radius: 20px;
 }
 
 .star-active {
-  color: #FBC02D;
+  color: #fbc02d;
   margin-top: 10px;
-  margin-bottom: 10px
+  margin-bottom: 10px;
 }
 
 .star-active:hover {
-  color: #F9A825;
-  cursor: pointer
+  color: #f9a825;
+  cursor: pointer;
 }
 
 .star-inactive {
-  color: #CFD8DC;
+  color: #cfd8dc;
   margin-top: 10px;
-  margin-bottom: 10px
+  margin-bottom: 10px;
 }
 
 .black-text {
-  color: #000000
+  color: #000000;
 }
 
 .content {
-  font-size: 18px
+  font-size: 18px;
 }
 
 .profile-pic {
   width: 90px;
   height: 90px;
   border-radius: 100%;
-  margin-right: 30px
+  margin-right: 30px;
 }
 
 .pic {
   width: 80px;
   height: 80px;
-  margin-right: 10px
+  margin-right: 10px;
 }
 
 .vote {
-  cursor: pointer
+  cursor: pointer;
 }
-
-
-
-
 
 /* Original CSS */
 
@@ -293,7 +286,6 @@ header,
   color: #065b83;
   text-decoration: underline;
 }
-
 
 /* like button style */
 .btns {
@@ -318,4 +310,20 @@ header,
 
 .fa-search {
   font-size: 17px;
+}
+
+.create-btn {
+  color: black !important;
+}
+
+.create-card {
+  border: solid red;
+  color: black;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+.text-size {
+  /* font-weight: 300; */
+  font-size: 30px;
 }
