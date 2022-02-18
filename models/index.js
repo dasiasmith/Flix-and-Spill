@@ -1,26 +1,23 @@
-const User = require('./User');
-const Profile = require('./Profile');
-const Review = require('./Review');
-const Comment = require('./Comment');
-// user profile : one to one 
-User.hasOne(Profile, {
-  foreignKey: 'user_id',
+const User = require("./User");
 
-  onDelete: 'CASCADE',
-});
+const Review = require("./Review");
+const Comment = require("./Comment");
 
-
-Profile.belongsTo(User, {
-  foreignKey: 'user_id',
-});
-// user review: one to many 
 User.hasMany(Review, {
-  foreignKey: 'user_id',
-  onDelete: 'CASCADE'
+  foreignKey: "user_id",
+  onDelete: "CASCADE",
 });
 
 Review.belongsTo(User, {
-  foreignKey: 'user_id'
+  foreignKey: "user_id",
+});
+Comment.belongsTo(User, {
+  foreignKey: "user_id",
+});
+
+User.hasMany(Comment, {
+  foreignKey: "user_id",
+  onDelete: "CASCADE",
 });
 
 Comment.belongsTo(Review, {
@@ -29,7 +26,7 @@ Comment.belongsTo(Review, {
 });
 Review.hasMany(Comment, {
   foreignKey: "review_id",
-  // onDelete: "CASCADE",
+  onDelete: "CASCADE",
 });
 
-module.exports = { User, Profile, Review, Comment };
+module.exports = { User, Review, Comment };

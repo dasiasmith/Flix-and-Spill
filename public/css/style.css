@@ -315,3 +315,7 @@ header,
 .btn i:hover {
   cursor: pointer;
 }
+
+.fa-search {
+  font-size: 17px;
+}

@@ -19,4 +19,10 @@ module.exports = {
       return `<span for="img" aria-label="gear">⚙️</span>`;
     }
   },
+  format_plural: (word, amount) => {
+    if (amount !== 1) {
+      return `${word}s`;
+    }
+    return word;
+  },
 };
