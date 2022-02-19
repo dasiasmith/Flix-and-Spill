@@ -1,52 +1,4 @@
-Skip
-  to
-  content
-  Search
-  or
-  jump
-  to…
-  Pull
-  requests
-  Issues
-  Marketplace
-  Explore
-  @jing-liu-778
-  jing-liu-778
-  /
-  Netflix-and-Spill
-  Public
-  Code
-  Issues
-  Pull
-  requests
-  Actions
-  Projects
-  1
-  Wiki
-  Security
-  Insights
-  Settings
-  Netflix-and-Spill/public/css/style.css
-  @KeisaP
-  KeisaP
-  logo
-  change
-  Latest
-  commit
-  6e223fa
-  8
-  hours
-  ago
-  History
-  3
-  contributors
-  @jing-liu-778@dasiasmith@KeisaP
-  451
-  lines
-  (380 sloc)
-  6.6
-  KB
-  * {
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -254,13 +206,6 @@ a {
   opacity: 1;
 }
 
-<<<<<<< HEAD
-=======
-.card-body.p-4.p-lg-5.text-black {
-  color: black;
-}
-
->>>>>>> 37a03731498b9c748eaac39f1fa925d5f09b233c
 /* New Review Shit */
 #topReviews {
   margin-top: 35px;
@@ -327,78 +272,16 @@ hr {
   border-color: var(--red);
 }
 
-<<<<<<< HEAD
-.quote-box {
-=======
 .btn.btn-primary.lnr.lnr-pencil {
   background-color: var(--red);
   border-color: var(--red);
 }
 
-.quote-box{
->>>>>>> 37a03731498b9c748eaac39f1fa925d5f09b233c
+.quote-box {
   margin: auto;
   margin-bottom: 20px;
 }
 
-<<<<<<< HEAD
-/* Reviews Style */
-/* 
-.card {
-  border-radius: 5px;
-  background-color: #fff;
-  padding-left: 60px;
-  padding-right: 60px;
-  margin-top: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.bar-5 {
-  width: 70%;
-  height: 13px;
-  background-color: #fbc02d;
-  border-radius: 20px;
-}
-.star-active {
-  color: #fbc02d;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.star-active:hover {
-  color: #f9a825;
-  cursor: pointer;
-}
-.star-inactive {
-  color: #cfd8dc;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.black-text {
-  color: #000000;
-}
-.content {
-  font-size: 18px;
-}
-.profile-pic {
-  width: 90px;
-  height: 90px;
-  border-radius: 100%;
-  margin-right: 30px;
-}
-.pic {
-  width: 80px;
-  height: 80px;
-  margin-right: 10px;
-}
-.vote {
-  cursor: pointer;
-}
-.card.card-body {
-  color:#000000;
-} */
-
-=======
->>>>>>> 37a03731498b9c748eaac39f1fa925d5f09b233c
 /* Original CSS */
 
 header,
