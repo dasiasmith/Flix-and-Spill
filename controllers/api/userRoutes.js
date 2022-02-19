@@ -29,8 +29,17 @@ router.post("/", async (req, res) => {
     const options = {
       from: process.env.USER_EMAIL, // sender address
       to: `${userData.email}`, // list of receivers
-      subject: "Hello", // Subject line
+      subject: "Welcome to Flix&Spill", // Subject line
       text: "Hello world?",
+      html: `
+      <p>Welcome, ${userData.name}!</p>
+      <p>Thanks for sign up to Flix&Spill. You're now part of a commmunity that connects movie lovers across the world. <p>
+      <p>Flix&Spill gives global users a open platform to view, comment and share thoughts for movies and shows. 
+      <p>If you are an entertainment fan looking for a recommendation, or to share an opinion, you have come to the right place.</p>
+     
+      <p>Don't wait and get started by visiting us at <a href="">Flix&Spill</a>.</p>
+      <p>Flix&Spill Team</p>
+      <p><a href="mailto:flixandspill@gmail.com">Email us</a> with any questions!<p>`,
     };
 
     transporter.sendMail(options, function (err, info) {
