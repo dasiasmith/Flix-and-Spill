@@ -21,20 +21,17 @@ GIVEN I want to write a review for a Netflix movie or tv show
 WHEN I sign up as a user 
 THEN a welcome email is sent to me
 WHEN I log in
-THEN I input my zip code
-WHEN I input my zip code
-THEN a random local restaurant populates
-WHEN I accept a recipe or restaurant
-THEN I can rate it on a scale of 1-5
-WHEN I rate it
-THEN it saves the rating for me to view later
+THEN I write a review 
+WHEN I read a review
+THEN I can like a review and/or comment on that review
+
 ```
 <br>
 
 ### Links
 [Link to Live Webpage]()
 
-[Link to Github Repository]()
+[Link to Github Repository](https://github.com/jing-liu-778/Netflix-and-Spill)
 
 
 
@@ -42,5 +39,7 @@ THEN it saves the rating for me to view later
 
 ### Screenshots
 ## -Working Code-
-![Landing Page]()
-![My Ratings Page]()
+![Homepage](images/homepage.gif)
+![Login Page](images/login_page.gif)
+![Profile Page](images/profile_page.gif)
+![Review Page](mages/Review_page.JPG)
