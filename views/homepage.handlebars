@@ -116,54 +116,34 @@
       <hr id="topTenHr" class="rounded">
   </div>
 {{#each reviews as |review| }}
-<div class="container-fluid">
-  <div class="row justify-content-center">
-    <div class="col-xl-7 col-lg-8 col-md-10 col-12 text-center mb-5">
-      <div class="card">
-        <div class="row d-flex">
-          {{!-- Test profile picture to see why content isn't showing --}}
-          <div class=""> <img class="profile-pic" src="https://i.imgur.com/V3ICjlm.jpg"> </div>
-            <div class="d-flex flex-column">
-                <h3 class="mt-2 mb-0">{{review.user.name}}</h3>
-                {{!-- <div> We can uncomment if we want users to give stars
-                    <p class="text-left"><span class="text-muted">4.0</span> <span class="fa fa-star star-active ml-3"></span> <span class="fa fa-star star-active"></span> <span class="fa fa-star star-active"></span> <span class="fa fa-star star-active"></span> <span class="fa fa-star star-inactive"></span></p>
-                </div> --}}
+{{#each review.comments}}
+<div class="container">
+    <blockquote class="quote-box">
+        <h2 class="card-title">{{review.title}}</h2>
+        <hr>
+      <p class="quotation-mark">
+        “
+      </p>
+      <p class="quote-text">
+        {{review.review}} 
+      </p>
+      <hr>
+      <div class="blog-post-actions">
+        <p class="blog-post-bottom pull-left">
+          - {{review.user.name}}
+        </p>
+        <p>
+            <a class="btn btn-primary lnr lnr-eye" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                View Comments
+            </a>
+            </p>
+            <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                {{user.name}}: {{comment}}
             </div>
-            <div class="ml-auto">
-                <p class="text-muted pt-5 pt-sm-3">{{review.date_created}}</p>
             </div>
-        </div>
-        <div class="row text-left">
-            <h4 class="black-text mt-3">{{review.title}}</h4>
-            <p class="content">{{review.review}}</p>
-        </div>
-        {{!-- Like and unlike feature here --}}
-        <div class="row text-left mt-4">
-            <div class="like mr-3 vote"> <img src="https://i.imgur.com/mHSQOaX.png"><span class="black-text pl-2">20</span> </div>
-            <div class="unlike vote"> <img src="https://i.imgur.com/bFBO3J7.png"><span class="text-muted pl-2">4</span> </div>
-        </div>
       </div>
-    </div>
-  </div>
+    </blockquote>
+    {{/each}}
+    {{/each}}
 </div>
-</div>
-<a class="btn text-warning" id="view-comment-btn" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">View Comments</a>
-                    <div class="collapse" id="collapseExample">
-                        <div class="card-comments card-body">
-                            <div class="overflow-auto">
-                                <div class="comments">
-  {{#each review.comments}}
-  <section class="comment">
- 
-    <div class="text">
-      {{comment}}<br>
-      
-      <br></br>
-    </div>
-  </section>
-  {{/each}}
-</div>
-  </div>
-
-
-{{/each}}

@@ -25,7 +25,7 @@
 }
 
 body {
-  /* color: white; */
+  color: white;
   background: black;
 }
 h1 {
@@ -206,8 +206,76 @@ a {
   opacity: 1;
 }
 
-/* Reviews Style */
+/* New Review Shit */
+blockquote {
+  border-left:none
+}
 
+.card-title {
+  margin: 10px;
+}
+
+.quote-badge {
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.2);   
+}
+
+.quote-box {
+  
+  overflow: hidden;
+  margin-top: 50px;
+  padding-top: -25px;
+  border-radius: 17px;
+  background-color: rgb(255, 255, 255);
+  color: var(--red);
+  width: 325px;
+  box-shadow: 2px 2px 2px 2px #E0E0E0;
+  
+}
+
+.quotation-mark {
+  
+  margin-top: 10px;
+  font-weight: bold;
+  font-size:100px;
+  color: var(--red);
+  font-family: "Times New Roman", Times, Serif;
+  
+}
+
+.quote-text {
+  
+  font-size: 30px;
+  margin-top: -50px;
+  color: var(--back);
+}
+
+hr {
+  background-color: var(--red);
+  height: 3px;
+}
+
+.card.card-body {
+  color:#000000;
+} 
+
+.blog-post-bottom.pull-left {
+  color: var(--back)
+}
+
+.btn.btn-primary.lnr.lnr-eye {
+  background-color: var(--red);
+  border-color: var(--red);
+}
+
+.quote-box{
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+
+/* Reviews Style */
+/* 
 .card {
   border-radius: 5px;
   background-color: #fff;
@@ -267,6 +335,10 @@ a {
   cursor: pointer;
 }
 
+.card.card-body {
+  color:#000000;
+} */
+
 /* Original CSS */
 
 header,
@@ -279,7 +351,7 @@ header,
   border: none;
   padding: 0;
   cursor: pointer;
-  color: #1b89bc;
+  color: var(--red);
   text-decoration: none;
   font-size: 100%;
 }
