@@ -1,34 +1,3 @@
-{{!-- {{#if no_results}}
-  <header class="col s12">
-  </header>
-  <div class="col s12 center">
-    <p>No tools found for {{search}}!</p>
-  </div>
-{{/if}} --}}
-<!-- OTHERWISE, SHOW ALL SEARCH RESULT TOOLS WITH CATEGORY ICON, TOOL NAME, OWNER NAME, AND NEIGHBORHOOD NAME -->
-{{!-- <h3 class="page-title"> show result "{{search}}":</h3> --}}
-
-<div class="jumbo">
-  <div class="right tomster"></div>
-  <h2>Welcome!</h2>
-  <p>
-    Time to spill!
-    <br>Browse our listings, or use the search box above to narrow your search.
-  </p>
-  {{#link-to 'search' class="button"}}
-    Search
-  {{/link-to}}
-</div>
-
-{{#list-filter
-   filter=(action 'filterByReview')
-   as |review|}}
-  <ul class="results">
-    {{#each review as |review|}}
-      <li>{{review-listing review=review}}</li>
-    {{/each}}
-  </ul>
-{{/list-filter}}
 
 {{#each reviews as |review|}}
   <section>
