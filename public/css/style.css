@@ -279,7 +279,7 @@ header,
   border: none;
   padding: 0;
   cursor: pointer;
-  color: #1b89bc;
+  color: var(--red);
   text-decoration: none;
   font-size: 100%;
 }
@@ -301,7 +301,7 @@ header,
   background: transparent;
   border: none;
   margin: 87px;
-  font-size: 25px;
+  font-size: 20px;
   outline: none;
   color: grey;
 }
@@ -345,4 +345,29 @@ header,
 } */
 p {
   color: white;
+}
+/* 
+.review {
+  border: rgb(221, 14, 14);
+} */
+.comment-list {
+  margin-top: 20px;
+}
+
+.posted-comment {
+  color: white;
+}
+
+.comment-border {
+  border-bottom-style: solid;
+}
+.text-size-1 {
+  font-size: 35px;
+}
+.text-size-2 {
+  font-size: 25px;
+}
+.comment-center {
+  display: flex;
+  flex-direction: column;
 }
