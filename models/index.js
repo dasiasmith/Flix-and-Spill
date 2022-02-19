@@ -1,8 +1,6 @@
 const User = require("./User");
-
 const Review = require("./Review");
 const Comment = require("./Comment");
-// test
 User.hasMany(Review, {
   foreignKey: "user_id",
   onDelete: "CASCADE",
@@ -12,6 +10,7 @@ Review.belongsTo(User, {
   foreignKey: "user_id",
   onDelete: "CASCADE",
 });
+
 Comment.belongsTo(User, {
   foreignKey: "user_id",
 });
@@ -23,8 +22,8 @@ User.hasMany(Comment, {
 
 Comment.belongsTo(Review, {
   foreignKey: "review_id",
-  // onDelete: "CASCADE",
 });
+
 Review.hasMany(Comment, {
   foreignKey: "review_id",
   onDelete: "CASCADE",
