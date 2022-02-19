@@ -3,7 +3,7 @@ async function searchFormHandler(event) {
 
   //  reference from main.handlebar:  id="search-input" name="search-text"
   const search = document.querySelector('input[name="search-text"]').value;
-
+  console.log("search----->", search);
   if (search) {
     const response = await fetch(`/search/${search}`, {
       method: "get",

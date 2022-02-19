@@ -26,3 +26,8 @@
 .search-btn {
   font-size: 4px;
 }
+
+/* for profie handlebar */
+.review-list a {
+  color: black;
+}
