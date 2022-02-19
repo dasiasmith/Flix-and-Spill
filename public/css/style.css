@@ -206,9 +206,16 @@ a {
   opacity: 1;
 }
 
-
+.card-body.p-4.p-lg-5.text-black {
+  color: black;
+}
 
 /* New Review Shit */
+#topReviews {
+  margin-top: 35px;
+}
+
+
 blockquote {
   border-left:none
 }
@@ -266,6 +273,11 @@ hr {
 }
 
 .btn.btn-primary.lnr.lnr-eye {
+  background-color: var(--red);
+  border-color: var(--red);
+}
+
+.btn.btn-primary.lnr.lnr-pencil {
   background-color: var(--red);
   border-color: var(--red);
 }
