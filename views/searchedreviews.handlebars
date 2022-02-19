@@ -1,20 +1,23 @@
-{{!-- {{#if no_results}}
-  <header class="col s12">
-  </header>
-  <div class="col s12 center">
-    <p>No tools found for {{search}}!</p>
-  </div>
-{{/if}} --}}
-<!-- OTHERWISE, SHOW ALL SEARCH RESULT TOOLS WITH CATEGORY ICON, TOOL NAME, OWNER NAME, AND NEIGHBORHOOD NAME -->
-{{!-- <h3 class="page-title"> show result "{{search}}":</h3> --}}
 {{#each reviews as |review|}}
   <section>
-    <h2><a href="/review/{{id}}">{{review.title}} </a></h2>
+    <h2><a href="/reviews/{{id}}">{{review.title}} </a></h2>
     <p>{{review.review}}</p>
     <strong>Posted by
       {{review.user.name}}
       on
       {{format_date date_created}}</strong>
+
+  </section>
+{{/each}}
+
+{{#each comments as |comment|}}
+  <section>
+    <h2><a href="/comments/{{id}}">{{comment.review_id}} </a></h2>
+    <p>{{comment.comment}}</p>
+    <strong>Posted by
+      {{review.comment.user.name}}
+      on
+      {{format_date comment.date_created}}</strong>
 
   </section>
 {{/each}}
