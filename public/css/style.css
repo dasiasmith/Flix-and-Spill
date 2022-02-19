@@ -1,4 +1,52 @@
-* {
+Skip
+  to
+  content
+  Search
+  or
+  jump
+  to…
+  Pull
+  requests
+  Issues
+  Marketplace
+  Explore
+  @jing-liu-778
+  jing-liu-778
+  /
+  Netflix-and-Spill
+  Public
+  Code
+  Issues
+  Pull
+  requests
+  Actions
+  Projects
+  1
+  Wiki
+  Security
+  Insights
+  Settings
+  Netflix-and-Spill/public/css/style.css
+  @KeisaP
+  KeisaP
+  logo
+  change
+  Latest
+  commit
+  6e223fa
+  8
+  hours
+  ago
+  History
+  3
+  contributors
+  @jing-liu-778@dasiasmith@KeisaP
+  451
+  lines
+  (380 sloc)
+  6.6
+  KB
+  * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -206,11 +254,9 @@ a {
   opacity: 1;
 }
 
-
-
 /* New Review Shit */
 blockquote {
-  border-left:none
+  border-left: none;
 }
 
 .card-title {
@@ -219,11 +265,10 @@ blockquote {
 
 .quote-badge {
   background-color: #000000;
-  background-color: rgba(0, 0, 0, 0.2);   
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .quote-box {
-  
   overflow: hidden;
   margin-top: 50px;
   padding-top: -25px;
@@ -231,22 +276,18 @@ blockquote {
   background-color: rgb(255, 255, 255);
   color: var(--red);
   width: 325px;
-  box-shadow: 2px 2px 2px 2px #E0E0E0;
-  
+  box-shadow: 2px 2px 2px 2px #e0e0e0;
 }
 
 .quotation-mark {
-  
   margin-top: 10px;
   font-weight: bold;
-  font-size:100px;
+  font-size: 100px;
   color: var(--red);
   font-family: "Times New Roman", Times, Serif;
-  
 }
 
 .quote-text {
-  
   font-size: 30px;
   margin-top: -50px;
   color: var(--back);
@@ -258,11 +299,11 @@ hr {
 }
 
 .card.card-body {
-  color:#000000;
-} 
+  color: #000000;
+}
 
 .blog-post-bottom.pull-left {
-  color: var(--back)
+  color: var(--back);
 }
 
 .btn.btn-primary.lnr.lnr-eye {
@@ -270,11 +311,10 @@ hr {
   border-color: var(--red);
 }
 
-.quote-box{
+.quote-box {
   margin: auto;
   margin-bottom: 20px;
 }
-
 
 /* Reviews Style */
 /* 
@@ -287,56 +327,46 @@ hr {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
 .bar-5 {
   width: 70%;
   height: 13px;
   background-color: #fbc02d;
   border-radius: 20px;
 }
-
 .star-active {
   color: #fbc02d;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
 .star-active:hover {
   color: #f9a825;
   cursor: pointer;
 }
-
 .star-inactive {
   color: #cfd8dc;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
 .black-text {
   color: #000000;
 }
-
 .content {
   font-size: 18px;
 }
-
 .profile-pic {
   width: 90px;
   height: 90px;
   border-radius: 100%;
   margin-right: 30px;
 }
-
 .pic {
   width: 80px;
   height: 80px;
   margin-right: 10px;
 }
-
 .vote {
   cursor: pointer;
 }
-
 .card.card-body {
   color:#000000;
 } */
@@ -446,6 +476,13 @@ p {
   flex-direction: column;
 }
 
-.card-body.p-4.p-lg-5{
+.card-body.p-4.p-lg-5 {
   color: #000000;
+}
+
+.title-font {
+  font-size: 2rem;
+}
+.black-text {
+  color: black;
 }
