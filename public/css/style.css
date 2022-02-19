@@ -457,3 +457,7 @@ p {
   display: flex;
   flex-direction: column;
 }
+
+.card-body.p-4.p-lg-5{
+  color: #000000;
+}
