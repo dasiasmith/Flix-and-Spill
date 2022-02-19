@@ -254,7 +254,23 @@ a {
   opacity: 1;
 }
 
+<<<<<<< HEAD
+=======
+.card-body.p-4.p-lg-5.text-black {
+  color: black;
+}
+
+>>>>>>> 37a03731498b9c748eaac39f1fa925d5f09b233c
 /* New Review Shit */
+#topReviews {
+  margin-top: 35px;
+}
+.title-font {
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 blockquote {
   border-left: none;
 }
@@ -311,11 +327,21 @@ hr {
   border-color: var(--red);
 }
 
+<<<<<<< HEAD
 .quote-box {
+=======
+.btn.btn-primary.lnr.lnr-pencil {
+  background-color: var(--red);
+  border-color: var(--red);
+}
+
+.quote-box{
+>>>>>>> 37a03731498b9c748eaac39f1fa925d5f09b233c
   margin: auto;
   margin-bottom: 20px;
 }
 
+<<<<<<< HEAD
 /* Reviews Style */
 /* 
 .card {
@@ -371,6 +397,8 @@ hr {
   color:#000000;
 } */
 
+=======
+>>>>>>> 37a03731498b9c748eaac39f1fa925d5f09b233c
 /* Original CSS */
 
 header,
