@@ -147,7 +147,23 @@
   </div>
 </div>
 </div>
-
+<a class="btn text-warning" id="view-comment-btn" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">View Comments</a>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card-comments card-body">
+                            <div class="overflow-auto">
+                                <div class="comments">
+  {{#each review.comments}}
+  <section class="comment">
+ 
+    <div class="text">
+      {{comment}}<br>
+      
+      <br></br>
+    </div>
+  </section>
+  {{/each}}
+</div>
+  </div>
 
 
 {{/each}}

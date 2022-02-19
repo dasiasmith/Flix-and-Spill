@@ -25,10 +25,12 @@
 }
 
 body {
-  color: white;
+  /* color: white; */
   background: black;
 }
-
+h1 {
+  color: white;
+}
 /* Header and navbar */
 header {
   padding: 20px;
@@ -334,4 +336,13 @@ header,
   font-weight: 500;
   font-size: 2.5rem;
   margin-bottom: 40px;
+}
+.border-bottom {
+  border-bottom: 1px dotted;
+}
+/* .review-list h4 {
+  border-bottom: 1px dotted;
+} */
+p {
+  color: white;
 }
