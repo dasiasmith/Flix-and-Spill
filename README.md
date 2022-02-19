@@ -39,14 +39,10 @@ THEN I can like a review and/or comment on that review
 
 ### Screenshots
 ## -Working Code-
-<<<<<<< HEAD
-![Homepage](images/homepage.gif)
-![Login Page](images/login_page.gif)
-![Profile Page](images/profile_page.gif)
-![Review Page](images/Review_page.JPG)
+
 =======
 ![Homepage](https://github.com/jing-liu-778/Netflix-and-Spill/blob/main/public/images/homepage.gif)
 ![Login Page](https://github.com/jing-liu-778/Netflix-and-Spill/blob/main/public/images/login_page.gif)
 ![Profile Page](https://github.com/jing-liu-778/Netflix-and-Spill/blob/main/public/images/profile_page.gif)
 ![Review Page](https://github.com/jing-liu-778/Netflix-and-Spill/blob/main/public/images/Review_page.JPG)
->>>>>>> a8c36c111e74059aec38eb4c7d03bbc7b2c1ff4f
+
