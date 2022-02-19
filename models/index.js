@@ -1,6 +1,6 @@
-const User = require("./user");
-const Review = require("./review");
-const Comment = require("./comment");
+const User = require("./User");
+const Review = require("./Review");
+const Comment = require("./Comment");
 User.hasMany(Review, {
   foreignKey: "user_id",
   onDelete: "CASCADE",
