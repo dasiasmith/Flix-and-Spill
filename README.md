@@ -42,4 +42,4 @@ THEN I can like a review and/or comment on that review
 ![Homepage](images/homepage.gif)
 ![Login Page](images/login_page.gif)
 ![Profile Page](images/profile_page.gif)
-![Review Page](mages/Review_page.JPG)
+![Review Page](images/Review_page.JPG)
