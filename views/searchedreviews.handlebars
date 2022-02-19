@@ -7,14 +7,49 @@
 {{/if}} --}}
 <!-- OTHERWISE, SHOW ALL SEARCH RESULT TOOLS WITH CATEGORY ICON, TOOL NAME, OWNER NAME, AND NEIGHBORHOOD NAME -->
 {{!-- <h3 class="page-title"> show result "{{search}}":</h3> --}}
+
+<div class="jumbo">
+  <div class="right tomster"></div>
+  <h2>Welcome!</h2>
+  <p>
+    Time to spill!
+    <br>Browse our listings, or use the search box above to narrow your search.
+  </p>
+  {{#link-to 'search' class="button"}}
+    Search
+  {{/link-to}}
+</div>
+
+{{#list-filter
+   filter=(action 'filterByReview')
+   as |review|}}
+  <ul class="results">
+    {{#each review as |review|}}
+      <li>{{review-listing review=review}}</li>
+    {{/each}}
+  </ul>
+{{/list-filter}}
+
 {{#each reviews as |review|}}
   <section>
-    <h2><a href="/review/{{id}}">{{review.title}} </a></h2>
+    <h2><a href="/reviews/{{id}}">{{review.title}} </a></h2>
     <p>{{review.review}}</p>
     <strong>Posted by
       {{review.user.name}}
       on
       {{format_date review.date_created}}</strong>
+
+  </section>
+{{/each}}
+
+{{#each comments as |comment|}}
+  <section>
+    <h2><a href="/comments/{{id}}">{{comment.review_id}} </a></h2>
+    <p>{{comment.comment}}</p>
+    <strong>Posted by
+      {{comment.review.user.name}}
+      on
+      {{format_date comment.date_created}}</strong>
 
   </section>
 {{/each}}
