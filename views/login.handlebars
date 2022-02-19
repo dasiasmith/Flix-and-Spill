@@ -1,51 +1,64 @@
-<div class="row">
-  <div class="col-md-6">
-    <h2>Login</h2>
+<section class="vh-100" style="background-color: #c4c4c4;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-xl-10">
+        <div class="card" style="border-radius: 1rem;">
+          <div class="row g-0">
+            <div class="col-md-6 col-lg-5 d-none d-md-block">
+              <img
+                src="images/tv-5571609_cropped.jpg"
+                alt="login form"
+                class="img-fluid" style="border-radius: 1rem 0 0 1rem;"
+              />
+            </div>
+            {{!-- <div class="col-md-6 col-lg-7 d-flex align-items-center"> --}}
+              <div class="card-body p-4 p-lg-5 text-black">
 
-    <form class="form login-form">
-      <div class="form-group">
-        <label for="email-login">email:</label>
-        <input class="form-input" type="text" id="email-login" />
+                <form class="form login-form">
+                  <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
+                  <div class="form-outline mb-4" class="form-group">
+                    <input type="email" id="email-login" class="form-control form-control-lg form-input" />
+                    <label class="form-label" for="email-login">Email address</label>
+                  </div>
+                  <div class="form-outline mb-4" class="form-group">
+                    <input type="password" id="password-login" class="form-control form-control-lg form-input" />
+                    <label class="form-label" for="password-login">Password</label>
+                  </div>
+                  <div class="pt-1 mb-4" class="form-group">
+                    <button class="btn btn-dark btn-lg btn-block" type="submit">Login</button>
+                  </div>
+                </form>
+                <div class="col-md-12">
+                   <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Register</h5>
+                    <form class="form signup-form">
+                      <div class="form-outline mb-4" class="form-group">
+                        <label for="name-signup">name:</label>
+                        <input type="text" id="name-signup" class="form-control form-control-lg form-input" />
+                      </div>
+                      <div class="form-outline mb-4" class="form-group">
+                        <label for="email-signup">email:</label>
+                        <input type="text" id="email-signup" class="form-control form-control-lg form-input" />
+                      </div>
+                      <div class="form-group" class="form-outline mb-4">
+                        <label for="password-signup">password:</label>
+                        <input type="password" id="password-signup" class="form-control form-control-lg form-input" />
+                      </div>
+                      <div class="pt-1 mb-4" class="form-group">
+                        <button class="btn btn-dark btn-lg btn-block" type="submit">signup</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="password-login">password:</label>
-        <input class="form-input" type="password" id="password-login" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">login</button>
-      </div>
-    </form>
+    </div>
   </div>
-  <div class="col-md-6">
-    <h2>Signup</h2>
+</section>
 
-    <form class="form signup-form">
-      <div class="form-group">
-        <label for="name-signup">name:</label>
-        <input class="form-input" type="text" id="name-signup" />
-      </div>
-      <div class="form-group">
-        <label for="email-signup">email:</label>
-        <input class="form-input" type="text" id="email-signup" />
-      </div>
-      <div class="form-group">
-        <label for="password-signup">password:</label>
-        <input class="form-input" type="password" id="password-signup" />
-      </div>
-      {{! <div class="form-group">
-        <label for="bio-signup">bio:</label>
-        <input class="form-input" type="bio" id="bio-signup" />
-      </div>
-      <div class="form-group">
-        <label for="genre-signup">favorite genre:</label>
-        <input class="form-input" type="genre" id="genre-signup" />
-      </div> }}
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">signup</button>
-      </div>
-    </form>
-  </div>
-</div>
 
 <script type="text/javascript" src="./js/login.js"></script>
+
 {{! <script type="text/javascript" src="./nodemail.js"></script> }}
