@@ -48,7 +48,7 @@ THEN I can like a review and/or comment on that review
 ![Homepage](https://github.com/jing-liu-778/Netflix-and-Spill/blob/main/public/images/homepage.gif)
 ![Login Page](https://github.com/jing-liu-778/Netflix-and-Spill/blob/main/public/images/login_page.gif)
 ![Profile Page](https://github.com/jing-liu-778/Netflix-and-Spill/blob/main/public/images/profile_page.gif)
-![Review Page](https://github.com/jing-liu-778/Netflix-and-Spill/blob/main/public/images/Review_page.JPG)
+![Review Page](https://github.com/jing-liu-778/Netflix-and-Spill/blob/main/public/images/Review_page.png)
 
 ## Contributing
 
