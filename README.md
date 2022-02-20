@@ -2,14 +2,14 @@
 
 ![Github licence](http://img.shields.io/badge/license-MIT-blue.svg)
 
-### Description:
+## Description:
 
 #### This apps gives users the opportunity to share and read reviews on popular Netflix movies and tv shows. It also gives them the opportunity to interact with other users by commenting on existing reviews. The creators of this application are Jing Liu, Dasia Smith, Olivia Latham and Keisa Portress
 
 <br>
 <br>
 
-### User Story:
+## User Story:
 
 ```
 AS a User
@@ -18,7 +18,7 @@ CREATE a profile that includes all of my past reviews
 SO THAT when I write a review, users can comment and "like" my reviews.
 ```
 
-### Acceptance Criteria:
+## Acceptance Criteria:
 
 ```
 GIVEN I want to write a review for a Netflix movie or tv show
@@ -33,7 +33,7 @@ THEN I can like a review and/or comment on that review
 
 <br>
 
-### Links
+## Links
 
 [Link to Live Webpage](https://shielded-gorge-65326.herokuapp.com/login)
 
@@ -41,9 +41,9 @@ THEN I can like a review and/or comment on that review
 
 <br>
 
-### Screenshots
+## Screenshots
 
-## -Working Code-
+## Working Code
 
 ![Homepage](https://github.com/jing-liu-778/Netflix-and-Spill/blob/main/public/images/homepage.gif)
 ![Login Page](https://github.com/jing-liu-778/Netflix-and-Spill/blob/main/public/images/login_page.gif)
