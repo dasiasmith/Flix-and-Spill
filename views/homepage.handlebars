@@ -116,7 +116,7 @@
       <hr id="topTenHr" class="rounded">
   </div>
 {{#each reviews as |review| }}
-{{#each review.comments}}
+{{!-- {{#each review.comments}} --}}
 <div class="container">
     <blockquote class="quote-box">
       <a class ="title-font" href="/review/{{review.id}}">{{review.title}}</a>
@@ -129,25 +129,29 @@
         {{review.review}} 
       </p>
       <hr>
+       
       <div class="blog-post-actions">
-        <p class="blog-post-bottom pull-left">
-          - {{review.user.name}}
-        </p>
-        <p>
-            <a class="btn btn-primary lnr lnr-eye" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                View Comments
-            </a>
-            <a class="btn btn-primary lnr lnr-pencil" href="http://localhost:3001/review/{{review.id}}">
-                Add Comment
-            </a>
+            <p class="blog-post-bottom pull-left">
+            - {{review.user.name}}
             </p>
-            <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-                {{user.name}}: {{comment}}
-            </div>
-            </div>
+           {{#each review.comments}}
+            <p>
+                <a class="btn btn-primary lnr lnr-eye" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                View Comments
+                </a>
+                <a class="btn btn-primary lnr lnr-pencil" href="http://localhost:3001/review/{{review.id}}">
+                    Add Comment
+                </a>
+            </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                    {{user.name}}: {{comment}}
+                    </div>
+                </div>
+                  {{/each}}
       </div>
+    
     </blockquote>
-    {{/each}}
+    {{!-- {{/each}} --}}
     {{/each}}
 </div>
