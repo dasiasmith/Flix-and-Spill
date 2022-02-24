@@ -35,7 +35,7 @@ THEN I can like a review and/or comment on that review
 
 ## Links
 
-[Link to Live Webpage](https://shielded-gorge-65326.herokuapp.com/login)
+[Link to Live Webpage](https://shielded-gorge-65326.herokuapp.com/)
 
 [Link to Github Repository](https://github.com/jing-liu-778/Netflix-and-Spill)
 

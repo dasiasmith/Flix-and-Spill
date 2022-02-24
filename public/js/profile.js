@@ -35,7 +35,7 @@ const delButtonHandler = async (event) => {
     const response = await fetch(`/api/reviews/${id}`, {
       method: "DELETE",
     });
-
+    console.log("response------------>", JSON.stringify(response, null, 2));
     if (response.ok) {
       document.location.reload();
     } else {

@@ -24,6 +24,7 @@ router.delete("/:id", withAuth, async (req, res) => {
       },
     });
 
+    console.log("delete review----->", reviewData);
     if (!reviewData) {
       res.status(404).json({ message: "No review found with this id!" });
       return;
